@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(
     cors({
       origin: process.env.NODE_ENV === 'production' 
-        ? "https://interactive-data-fe.vercel.app/" 
+        ? "https://interactive-data-fe.vercel.app" 
         : "http://localhost:3000", // Conditional origin based on environment
   
       methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
